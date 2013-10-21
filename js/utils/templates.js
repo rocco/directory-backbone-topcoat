@@ -1,12 +1,12 @@
-app.utils.templates = (function() {
+app.utils.templates = (function () {
 
-    var load = function(views, callback) {
+    var load = function (views, callback) {
 
         var deferreds = [];
 
-        $.each(views, function(index, view) {
+        $.each(views, function (index, view) {
             if (app.views[view]) {
-                deferreds.push($.get('tpl/' + view + '.html', function(data) {
+                deferreds.push($.get('tpl/' + view + '.html', function (data) {
                     app.views[view].prototype.template = _.template(data);
                 }, 'html'));
             } else {

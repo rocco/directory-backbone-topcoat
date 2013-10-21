@@ -3,7 +3,7 @@ app.views.MapView = Backbone.View.extend({
     render: function () {
         this.$el.html(this.template());
 
-        setTimeout(function() {
+        setTimeout(function () {
             // create a map in the "map" div, set the view to a given place and zoom
             var map = L.map('map', {zoomControl:false}).setView([42.35996, -71.05579], 16);
             // add an OpenStreetMap tile layer
@@ -22,7 +22,7 @@ app.views.MapView = Backbone.View.extend({
         "click .back-button": "back"
     },
 
-    back: function() {
+    back: function () {
         window.history.back();
         return false;
     }

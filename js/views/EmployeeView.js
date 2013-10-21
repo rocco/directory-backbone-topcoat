@@ -9,7 +9,7 @@ app.views.EmployeeView = Backbone.View.extend({
         "click .back-button": "back"
     },
 
-    back: function(event) {
+    back: function (event) {
         window.history.back();
         return false;
     }

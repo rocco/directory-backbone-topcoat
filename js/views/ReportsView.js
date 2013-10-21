@@ -15,7 +15,7 @@ app.views.ReportsView = Backbone.View.extend({
         "click .back-button": "back"
     },
 
-    back: function() {
+    back: function () {
         window.history.back();
         return false;
     }
